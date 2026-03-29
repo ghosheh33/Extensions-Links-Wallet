@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --border-color: #e2e8f0;
+  --radius: 6px;
+  --error-color: #ef4444;
+  --success-color: #10b981;
+  --edit-color: #f59e0b;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+.container {
+  padding: 12px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+
+.compact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.compact-form input, .search-box input {
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  background-color: var(--card-bg);
+}
+
+.compact-form input:focus, .search-box input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.primary-btn {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+  flex: 1;
+  background-color: #64748b;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.secondary-btn:hover {
+  background-color: #475569;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 12px 0;
+}
+
+.search-box {
+  margin-bottom: 12px;
+}
+
+.category-group {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.category-title {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.category-title::after {
+  content: "\25BC";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.6rem;
+  transition: transform 0.2s;
+}
+
+.category-title.collapsed::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.link-list {
+  display: block;
+  margin-top: 10px;
+}
+
+.link-list.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 6px 8px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: border-color 0.2s;
+}
+
+.link-item:hover {
+  border-color: var(--primary-color);
+}
+
+.link-item a {
+  flex-grow: 1;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.link-item a:hover {
+  color: var(--primary-color);
+}
+
+.action-btns {
+  display: flex;
+  gap: 4px;
+}
+
+.edit-btn {
+  background-color: var(--edit-color);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #d97706;
+}
+
+.delete-btn {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, bottom 0.3s;
+  text-align: center;
+  width: 90%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.notification.show {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}
+
+.notification.error {
+  background-color: var(--error-color);
+}
+
+.notification.success {
+  background-color: var(--success-color);
+}

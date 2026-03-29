@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "محفظة الروابط",
+  "version": "1.0",
+  "description": "حفظ وتصنيف الروابط المهمة بسهولة.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "احفظ الرابط"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
