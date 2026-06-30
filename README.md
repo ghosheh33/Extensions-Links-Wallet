@@ -32,6 +32,7 @@
 * ربط الإضافة بقاعدة بيانات سحابية مثل Supabase لمزامنة الروابط للمستخدمين عبر أجهزة مختلفة.
 * إضافة ميزة تصدير واستيراد الروابط بصيغة JSON.
 
-## المطور
+## Developer
 
-تم التطوير بواسطة: Mahmoud Ghosheh
+Developed by: Mahmoud Ghosheh
+https://www.linkedin.com/in/mahmoud-ghosheh
