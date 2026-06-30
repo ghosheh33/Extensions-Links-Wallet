@@ -1,38 +1,37 @@
-# Link Manager Extension
+# محفظة الروابط (Link Manager Extension)
 
-A Google Chrome extension built with JavaScript (Manifest V3) designed to help users save, categorize, and manage important links easily and quickly without leaving the current page.
+إضافة لمتصفح جوجل كروم مبنية بلغة الجافاسكريبت (Manifest V3) تهدف إلى مساعدة المستخدمين على حفظ، تصنيف، وإدارة الروابط المهمة بسهولة وسرعة دون مغادرة الصفحة الحالية.
 
-## Key Features
+## المميزات الأساسية
 
-* Auto-save: Automatically fetches the title and URL of the current page when the extension is opened.
-* Flexible Categorization: Add custom categories with an autocomplete feature for previously saved categories.
-* Interactive UI: Displays links grouped by category in collapsible lists.
-* Advanced Search: Search bar for quick access to links by name or category.
-* Full Management: Easily edit or delete saved links.
-* Duplication Prevention: Alerts the user when trying to save an already existing link.
-* Toast Notifications: Elegant popup notifications to confirm save or edit actions.
+* حفظ تلقائي: جلب عنوان ورابط الصفحة الحالية بمجرد فتح الإضافة.
+* تصنيف مرن: إمكانية كتابة فئات مخصصة مع ميزة الإكمال التلقائي للفئات المحفوظة مسبقا.
+* واجهة تفاعلية: عرض الروابط مجمعة حسب الفئة في قوائم قابلة للطي.
+* بحث متقدم: شريط بحث للوصول السريع للروابط عبر الاسم أو الفئة.
+* إدارة كاملة: إمكانية تعديل وحذف الروابط المحفوظة بسهولة.
+* منع التكرار: تنبيه المستخدم عند محاولة حفظ رابط موجود مسبقا.
+* إشعارات منبثقة: نظام تنبيهات (Toast) أنيق لتأكيد عمليات الحفظ أو التعديل.
 
-## Technologies Used
+## التقنيات المستخدمة
 
 * HTML5
 * CSS3 
 * JavaScript (Vanilla JS, DOM Manipulation)
 * Chrome Extensions API (Manifest V3, chrome.storage.local, chrome.tabs)
 
-## Installation and Usage
+## طريقة التثبيت والاستخدام
 
-1. Download or clone this repository to your local machine.
-2. Open Google Chrome and navigate to: `chrome://extensions/`
-3. Enable "Developer mode" in the top right corner.
-4. Click the "Load unpacked" button and select the folder containing the extension files.
-5. The extension icon will appear in your browser toolbar. You can now pin it and start using it.
+1. قم بتحميل أو استنساخ هذا المستودع إلى جهازك.
+2. افتح متصفح جوجل كروم وانتقل إلى الصفحة: `chrome://extensions/`
+3. قم بتفعيل "وضع المطور" (Developer mode) من الزاوية العلوية.
+4. اضغط على زر "Load unpacked" واختر المجلد الذي يحتوي على ملفات الإضافة.
+5. ستظهر أيقونة الإضافة في شريط المتصفح، يمكنك الآن تثبيتها في الشريط العلوي والبدء باستخدامها.
 
-## Proposed Future Developments
+## تطويرات مستقبلية مقترحة
 
-* Connect the extension to a cloud database like Supabase to sync users' links across different devices.
-* Add an export and import feature for links in JSON format.
+* ربط الإضافة بقاعدة بيانات سحابية مثل Supabase لمزامنة الروابط للمستخدمين عبر أجهزة مختلفة.
+* إضافة ميزة تصدير واستيراد الروابط بصيغة JSON.
 
-## Developer
+## المطور
 
-Developed by: Mahmoud Ghosheh
-https://www.linkedin.com/in/mahmoud-ghosheh
+تم التطوير بواسطة: Mahmoud Ghosheh
